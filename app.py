@@ -11,7 +11,7 @@ st.caption("Unified Mentor: European Central Bank | Analytical Dashboard")
 # ── Load Data ─────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\MOHINI\Downloads\bank_churn.csv")
+    df = pd.read_csv("bank_churn.csv")
     median_balance = df['Balance'].median()
 
     def classify_engagement(row):
